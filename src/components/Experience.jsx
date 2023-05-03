@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import Examroom from "../media/download.jpeg";
 import think from "../media/think.png";
+import Stack from "./Stack";
 
 const Experience = () => {
   return (
@@ -84,6 +85,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <Stack />
     </Box>
   );
 };
