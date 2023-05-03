@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import  TwitterIcon  from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-scroll";
 
@@ -62,26 +63,45 @@ const Footer = () => {
           SOCIAL
         </Typography>
 
+        <a 
+         href="https://github.com/aryan-hussain"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <GitHubIcon sx={{ mr: 2, color: "white" }} />
           <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             GitHub
           </Typography>
         </Box>
+        </a>
 
+        <a 
+         href="https://twitter.com/Hussain78668?t=rkNPTt8umRVnB3mo7a1QTA&s=09"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
-          <EmailIcon sx={{ mr: 2, color: "white" }} />
+          <TwitterIcon sx={{ mr: 2, color: "white" }} />
           <Typography variant="body2" sx={{ color: "white", my: 1 }}>
-            Email
+            Twitter
           </Typography>
         </Box>
+        </a>
 
+        <a 
+         href="https://www.linkedin.com/in/aryanhussain08/"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <LinkedInIcon sx={{ mr: 2, color: "white" }} />
           <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             LinkedIn
           </Typography>
         </Box>
+        </a>
+
       </Box>
     </Box>
   );
