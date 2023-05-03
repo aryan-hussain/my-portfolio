@@ -3,6 +3,7 @@ import React from "react";
 import Examroom from "../media/download.jpeg";
 import think from "../media/think.png";
 import Stack from "./Stack";
+import "../styles/Experience.css"
 
 const Experience = () => {
   return (
@@ -15,7 +16,7 @@ const Experience = () => {
         <span style={{ color: "rgba(0,199,255,255)" }}>Experience</span>
       </Typography>
 
-      <div style={{
+      <div className="ExpMain" style={{
         display:"grid",
         justifyContent:"center",
         // flexDirection:"column",
