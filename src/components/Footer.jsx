@@ -46,35 +46,7 @@ const Footer = () => {
         >
           Experience
         </Link>
-        <Link
-          to="about"
-          className="link"
-          smooth
-          style={{ color: "white", margin: "0.5rem 0", cursor: "pointer" }}
-        >
-          About
-        </Link>
-
-        {/* 
-
-        <Typography
-          variant="body2"
-          sx={{ color: "white", my: 1, cursor: "pointer" }}
-        >
-          Home
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{ color: "white", my: 1, cursor: "pointer" }}
-        >
-          Experience
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{ color: "white", my: 1, cursor: "pointer" }}
-        >
-          About
-        </Typography> */}
+        
       </Box>
 
       <Box

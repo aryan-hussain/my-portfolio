@@ -1,30 +1,18 @@
-import { Box, Button, Typography, styled } from "@mui/material";
-import React from "react";
-import Testimonial from "./Testimonial";
+import { Box, Button, Typography, styled, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions } from "@mui/material";
+import React, { useState } from "react";
 
 const About = () => {
-  const CustomBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent: "space-around",
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
-      alignItems: "center",
-      gap: "2rem",
-    },
-  }));
 
-  const CustomTitleBox = styled(Box)(({ theme }) => ({
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-around",
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
-      alignItems: "center",
-      gap: "2rem",
-    },
-  }));
+  const [open, setOpen] = useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  
   const CustomButton = styled(Button)(({ theme }) => ({
     border: "3px solid white",
     borderRadius: "25px",
@@ -44,37 +32,7 @@ const About = () => {
 
   return (
     <Box sx={{ maxWidth: "1300px", my: 10, padding: 3, mx: "auto" }} id="about">
-      <CustomTitleBox
-        sx={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-around",
-        }}
-      >
-        <Typography
-          variant="h4"
-          style={{ color: "white", textAlign: "center" }}
-        >
-          What people say about my work!
-        </Typography>
-        <div
-          style={{
-            height: "5px",
-            backgroundColor: "#00C7FF",
-            width: "50%",
-            border: 0,
-            borderRadius: "25px",
-          }}
-        ></div>
-      </CustomTitleBox>
-
-      <CustomBox sx={{ my: 7 }}>
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-      </CustomBox>
-
+     
       <div
         style={{
           height: "5px",
@@ -99,9 +57,23 @@ const About = () => {
           mt: 3,
           mb: 8,
         }}
+        onClick={handleClickOpen}
       >
         Get in Touch
       </CustomButton>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Contact Information</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Phone Number: 7888415331
+            <br />
+            Email: aryanhussain78668@gmail.com
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };

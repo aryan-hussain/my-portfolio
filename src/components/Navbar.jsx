@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import navIcon from "../media/react_logo.png";
+import navIcon from "../media/1668776480010.jpeg";
 
 import { Link } from "react-scroll";
 import { styled } from "@mui/system";
@@ -50,11 +50,11 @@ const Navbar = () => {
           >
             <Box
               component="img"
-              sx={{ maxHeight: "45px", maxWidth: "45px", objectFit: "cover" }}
+              sx={{ maxHeight: "45px", maxWidth: "45px", objectFit: "cover" , borderRadius:50}}
               src={navIcon}
             />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              My Portfolio
+              Aryan Hussain
             </Typography>
           </Box>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
               Experience
             </Link>
             <Link to="about" className="link" smooth>
-              About
+              Hire me
             </Link>
           </CustomBox>
         </CustomToolbar>

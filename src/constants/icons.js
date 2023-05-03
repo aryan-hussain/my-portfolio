@@ -29,11 +29,11 @@ export const icons = [
     name: "TypeScript",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
-  {
-    id: 6,
-    name: "NodeJS",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
+  // {
+  //   id: 6,
+  //   name: "NodeJS",
+  //   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  // },
   {
     id: 7,
     name: "Git",
