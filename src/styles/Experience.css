@@ -1,5 +1,11 @@
 @media only screen and (max-width: 600px)  {
     .ExpMain{
         padding: 20px;
+        text-align: center;
     }
+
+    .ExpMain-child{
+        justify-content: center;
+    }
+
 }

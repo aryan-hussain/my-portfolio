@@ -26,7 +26,7 @@ const Experience = () => {
 
 
 
-        <div style={{
+        <div className="ExpMain-child" style={{
           display:"flex",
           flexWrap:"wrap",
           gap:"10px"
@@ -55,7 +55,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div style={{
+        <div className="ExpMain-child" style={{
           display:"flex",
           flexWrap:"wrap",
           gap:"10px",
